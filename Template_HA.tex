@@ -42,9 +42,10 @@
 % 'to show' (german 'zu zeigen'/zz)
 \newcommand{\zuz}[0]{\ensuremath{\mathrm{z\kern-.4em\raise-0.82ex\hbox{z}}}}
 % Aufgaben and counting
-\newtheorem{counter}{counter}
+\newtheorem{counter}{counter}[section]
 \theoremstyle{remark}
 \newtheorem{auf}[counter]{Aufgabe}
+
 
 
 
@@ -53,6 +54,8 @@
 
 % Start at a specific Aufgabe with start + 1
 \setcounter{counter}{0}
+% The Section to start counting at
+\setcounter{section}{1}
 
 \maketitle
 

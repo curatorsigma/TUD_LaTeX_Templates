@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+% math packages
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+% \overset, that aligns to '&' in math-mode (\overset{x}&{y})
+\usepackage{aligned-overset}
+
+% MISC
+\usepackage{dsfont}
+\usepackage{enumerate}
+
+% Language and Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\selectlanguage{german}
+
+\title{Hausaufgaben ... Blatt ...}
+\date{}
+\author{Author}
+
+
+% Different Differentialstyles
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mdiff}[2]{D_#1 #2}
+\newcommand{\omdiff}[2]{\overline{D}_#1 #2}
+\newcommand{\umdiff}[2]{\underline{D}_#1 #2}
+% Norms over L^p
+\newcommand{\psnorm}[2]{\left|\left| #1 \right|\right|_{\mathscr{L}^{#2}}}
+\newcommand{\penorm}[2]{\left|\left| #1 \right|\right|_{L^{#2}}}
+\newcommand{\pnorm}[2]{\left|\left| #1 \right|\right|_{#2}}
+% General norm || . ||
+\newcommand{\norm}[1]{\left|\left| #1 \right|\right|}
+% display a set in class notation
+\newcommand{\set}[1]{\left\lbrace #1 \right\rbrace}
+% compact function definition
+\newcommand{\map}[4]{\begin{cases}  #1 \to #2 \\ #3 \mapsto #4 \end{cases}}
+% 'to show' (german 'zu zeigen'/zz)
+\newcommand{\zuz}[0]{\ensuremath{\mathrm{z\kern-.4em\raise-0.82ex\hbox{z}}}}
+% Aufgaben and counting
+\newtheorem{counter}{counter}
+\theoremstyle{remark}
+\newtheorem{auf}[counter]{Aufgabe}
+
+
+
+
+\begin{document}
+
+% Start at a specific Aufgabe with start + 1
+\setcounter{counter}{0}
+
+\maketitle
+
+\end{document}

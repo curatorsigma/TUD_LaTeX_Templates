@@ -1,0 +1,9 @@
+# Latex specific
+*.log
+*.aux
+*.pdf
+*.synctex.gz
+*.toc
+
+# Mac Specific
+.DS_Store

@@ -1,0 +1,43 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{mathptmx}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{fancyhdr}
+
+% Set Meta iniformation here
+\newcommand{\customAuthor}{Author}
+\newcommand{\customTitle}{Title}
+\newcommand{\dateOfSubmission}{date}
+\newcommand{\courseNumber}{coursenumber}
+
+% Titling
+\title{\customTitle}
+\author{\customAuthor}
+% supress date output
+\date{}
+
+% Spaß um die richtigen überschriftgrößen zu kriegen
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+% Spaß mit headern
+\pagestyle{fancyplain}
+\lhead{\courseNumber}
+\chead{\customAuthor}
+\rhead{\dateOfSubmission}
+
+\begin{document}
+\maketitle
+
+\end{document}
